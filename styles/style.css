@@ -67,6 +67,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 1rem;
 }
 
 .navigation__link {
@@ -139,6 +140,7 @@ button {
   background-color: var(--grey-light);
   height: 50%;
   padding-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
