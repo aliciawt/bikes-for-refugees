@@ -133,7 +133,10 @@ p {
 .content {
   display: flex;
   flex-direction: column;
-  width: 150%;
+}
+
+.main {
+  width: 200%;
 }
 
 /* Alert */
@@ -197,8 +200,16 @@ p {
 
 /* Article */
 
+.main-article {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
 .article {
   margin-bottom: 1rem;
+  border: 2px solid var(--grey-light);
+  padding: 1rem;
 }
 
 .article__title {
