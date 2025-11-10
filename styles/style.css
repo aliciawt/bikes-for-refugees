@@ -219,6 +219,21 @@ p {
   min-width: 350px;
 }
 
+.sidebar article {
+  border: 2px lightgrey solid;
+}
+
+.article__content {
+  padding-left: 10px;
+  margin-bottom: -10px;
+}
+
+.container {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
 /* Footer */
 
 .footer {
