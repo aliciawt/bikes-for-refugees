@@ -77,6 +77,10 @@ p {
   text-decoration: none;
 }
 
+.navigation__link:hover {
+  color: var(--orange-dark);
+}
+
 
 /* Text styles */
 
@@ -96,7 +100,7 @@ p {
 
 /* Buttons */
 
-button {
+.button {
   border-radius: 5px;
   border: none;
   font-size: 0.9rem;
@@ -109,9 +113,19 @@ button {
   color: var(--white);
 }
 
+.btn-primary:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
 .btn-secondary {
   background-color: var(--white);
   color: var(--orange-dark);
+}
+
+.btn-secondary:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
 }
 
 /* Content */
@@ -119,6 +133,7 @@ button {
 .content {
   display: flex;
   flex-direction: column;
+  width: 150%;
 }
 
 /* Alert */
