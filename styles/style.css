@@ -67,6 +67,7 @@ p {
 
 .navigation__item {
   padding: 0.5rem 0;
+  margin: 1rem;
 }
 
 .navigation__link {
@@ -74,6 +75,10 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation__link:hover {
+  color: var(--orange-dark);
 }
 
 
@@ -95,14 +100,43 @@ p {
 
 /* Buttons */
 
-  /* INSERT BUTTON STYLES HERE */
+.button {
+  border-radius: 5px;
+  border: none;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.5rem;
+  cursor: pointer;
+}
 
+.btn-primary {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--orange-dark);
+}
+
+.btn-secondary:hover {
+  background-color: var(--orange-dark);
+  color: var(--white);
+}
 
 /* Content */
 
 .content {
   display: flex;
   flex-direction: column;
+}
+
+.main {
+  width: 200%;
 }
 
 /* Alert */
@@ -120,20 +154,25 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url("../images/header-bike.jpg");
   background-color: var(--grey-light);
+  height: 50%;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
+  padding-top: 5rem;
   font-size: 2.5rem;
+  color: var(--white);
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: var(--white);
 }
-
 
 /* Headings */
 
@@ -161,8 +200,16 @@ p {
 
 /* Article */
 
+.main-article {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
 .article {
   margin-bottom: 1rem;
+  border: 2px solid var(--grey-light);
+  padding: 1rem;
 }
 
 .article__title {
@@ -209,6 +256,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  text-align: right;
 }
 
 /* Sidebar */
@@ -219,10 +267,25 @@ p {
   min-width: 350px;
 }
 
+.sidebar article {
+  border: 2px var(--grey-light) solid;
+}
+
+.article__content {
+  padding-left: 10px;
+  margin-bottom: -10px;
+}
+
+.container {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
 /* Footer */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .footer__content {
